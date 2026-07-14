@@ -1,0 +1,61 @@
+{
+  "slug": "premium-sample",
+  "title": "訂閱者限定:付費牆示範",
+  "description": "這篇文章需要有效訂閱才能閱讀 — 用它來測試 Recur 的權限閘門。",
+  "premium": true,
+  "publishedAt": "2026-01-02",
+  "content": {
+    "type": "doc",
+    "content": [
+      {
+        "type": "paragraph",
+        "content": [
+          { "type": "text", "text": "如果你看得到這段文字,代表 Recur 的 entitlements 檢查通過了 🎉" }
+        ]
+      },
+      {
+        "type": "heading",
+        "attrs": { "level": 2 },
+        "content": [{ "type": "text", "text": "付費牆怎麼運作" }]
+      },
+      {
+        "type": "bulletList",
+        "content": [
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  { "type": "text", "text": "閘門在伺服器端:未訂閱者連 HTML 都拿不到" }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  { "type": "text", "text": "權限由 Recur entitlements API 即時判定,不用自己維護訂閱狀態" }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "listItem",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  { "type": "text", "text": "取消訂閱後,依 Recur 的規則使用到期末為止" }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
