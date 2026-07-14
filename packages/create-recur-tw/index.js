@@ -13,7 +13,7 @@ import { downloadTemplate } from 'giget'
 
 // Each CLI release pins the templates repo to a tag so CLI and template
 // contents can't drift apart. Override with --ref (e.g. --ref main).
-const TEMPLATES_REF = 'v0.1.0'
+const TEMPLATES_REF = 'v0.2.0'
 const TEMPLATES_REPO = 'recur-tw/templates'
 
 const TEMPLATES = {
@@ -21,7 +21,11 @@ const TEMPLATES = {
     label: 'SaaS 訂閱制服務',
     hint: 'Next.js + 多方案訂閱 + entitlements 權限閘門 + customer portal',
   },
-  // Coming soon: newsletter, community, saas-tanstack, backend-only
+  newsletter: {
+    label: '付費電子報',
+    hint: 'Tiptap 編輯器 + R2 圖片上傳 + 訂閱牆,內容存 git 免資料庫',
+  },
+  // Coming soon: community, saas-tanstack, backend-only
 }
 
 const { version } = JSON.parse(

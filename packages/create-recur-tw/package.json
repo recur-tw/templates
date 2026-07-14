@@ -1,6 +1,6 @@
 {
   "name": "create-recur-tw",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Scaffold a Recur-integrated app from official templates.",
   "type": "module",
   "bin": {
@@ -9,7 +9,14 @@
   "files": [
     "index.js"
   ],
-  "keywords": ["recur", "create", "scaffold", "template", "subscription", "payments"],
+  "keywords": [
+    "recur",
+    "create",
+    "scaffold",
+    "template",
+    "subscription",
+    "payments"
+  ],
   "homepage": "https://github.com/recur-tw/templates",
   "repository": {
     "type": "git",

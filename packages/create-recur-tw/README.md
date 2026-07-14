@@ -17,7 +17,7 @@ npm create recur-tw@latest my-app -- --template saas --yes
 
 | Option | Description |
 |--------|-------------|
-| `-t, --template <name>` | Template to use (`saas`) |
+| `-t, --template <name>` | Template to use (`saas`, `newsletter`) |
 | `--pm <manager>` | Package manager for install (`pnpm` / `npm` / `yarn` / `bun`) |
 | `--no-install` | Skip installing dependencies |
 | `--no-git` | Skip `git init` |
