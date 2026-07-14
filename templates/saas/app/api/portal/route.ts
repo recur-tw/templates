@@ -1,6 +1,7 @@
 // Creates a Recur Customer Portal session for the signed-in user, so they
 // can self-manage subscriptions, payment methods, and billing history.
 import { NextRequest, NextResponse } from 'next/server'
+import { RecurAPIError } from 'recur-tw/server'
 import { recur } from '@/lib/recur'
 import { getSession } from '@/lib/session'
 
@@ -18,7 +19,7 @@ export async function POST(request: NextRequest) {
     })
     return NextResponse.json({ url: portalSession.url })
   } catch (error: unknown) {
-    if ((error as { code?: string })?.code === 'customer_not_found') {
+    if (error instanceof RecurAPIError && error.statusCode === 404) {
       // User has never purchased anything — nothing to manage yet.
       return NextResponse.json({ error: 'no_customer' }, { status: 404 })
     }
