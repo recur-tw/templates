@@ -1,7 +1,8 @@
 {
   "name": "create-recur-tw",
-  "version": "0.0.2",
-  "description": "Scaffold a Recur-integrated app (coming soon).",
+  "version": "0.1.0",
+  "description": "Scaffold a Recur-integrated app from official templates.",
+  "type": "module",
   "bin": {
     "create-recur-tw": "index.js"
   },
@@ -14,5 +15,13 @@
     "type": "git",
     "url": "git+https://github.com/recur-tw/templates.git"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.17"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.11.0",
+    "giget": "^2.0.0",
+    "picocolors": "^1.1.1"
+  }
 }

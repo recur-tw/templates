@@ -18,7 +18,7 @@ npx degit recur-tw/templates/templates/saas my-app
 
 | 模板 | 適用情境 | 展示的 Recur 能力 | 狀態 |
 |------|----------|-------------------|------|
-| [`saas`](templates/saas) | SaaS 訂閱制服務 | 多方案結帳、entitlements 權限閘門、customer portal、webhooks | 🚧 開發中 |
+| [`saas`](templates/saas) | SaaS 訂閱制服務 | 多方案結帳、entitlements 權限閘門、customer portal、webhooks | ✅ 可用 |
 | `newsletter` | 付費電子報 | 訂閱牆、內容閘門、email 寄送 | 📋 規劃中 |
 | `community` | 付費社群(Discord) | webhook 驅動的身分同步(入會/退會) | 📋 規劃中 |
 | `saas-tanstack` | SaaS(TanStack Start 版) | 同 `saas`,移植參考解 | 📋 規劃中 |
