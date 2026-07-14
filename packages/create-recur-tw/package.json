@@ -1,0 +1,18 @@
+{
+  "name": "create-recur-tw",
+  "version": "0.0.2",
+  "description": "Scaffold a Recur-integrated app (coming soon).",
+  "bin": {
+    "create-recur-tw": "index.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": ["recur", "create", "scaffold", "template", "subscription", "payments"],
+  "homepage": "https://github.com/recur-tw/templates",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/recur-tw/templates.git"
+  },
+  "license": "MIT"
+}
